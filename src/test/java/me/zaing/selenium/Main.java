@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-
 	/** 用户名 */
 	private static String username = "13683283532";
 	/** 密码 */
