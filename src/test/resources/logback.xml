@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+	<!-- ConsoleAppender -->
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger%n%msg%n%n</pattern>
+		</encoder>
+	</appender>
+	<!-- FileAppender -->
+	<appender name="file" class="ch.qos.logback.core.FileAppender">
+		<file>d:/selenium-in-action.log</file>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger%n%msg%n%n</pattern>
+		</encoder>
+		<append>true</append>
+		<prudent>false</prudent>
+	</appender>
+
+<!-- 	<logger name="me.zaing.selenium" level="DEBUG">
+		<appender-ref ref="file"/>
+	</logger> -->
+	<root level="debug">
+		<appender-ref ref="stdout"/>
+		<appender-ref ref="file"/>
+	</root>
+</configuration>
